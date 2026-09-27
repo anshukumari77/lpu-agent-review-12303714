@@ -1,0 +1,320 @@
+/* Amulet BEEP product layer. Original artwork, established product palette.
+   Source: supplied Visual Brand Kit V1.0; medium-specific palette retained. */
+:root {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+  --radius: 16px;
+  --surface-line: #e0dbd8;
+}
+body {
+  background: var(--warm);
+}
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+/* WebKit native menus ignore min-height alone. */
+select {
+  height: 48px;
+  min-height: 48px;
+}
+::selection {
+  color: var(--ink);
+  background: #ffd6e4;
+}
+h1,
+h2 {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif;
+}
+.app-header {
+  min-height: 80px;
+  padding: 16px max(28px, calc((100vw - 1360px) / 2));
+  border-bottom: 1px solid #464d4f;
+}
+.brand {
+  gap: 22px;
+}
+.product-name {
+  font-size: 16px;
+  letter-spacing: 0.025em;
+}
+.product-name > span {
+  font-size: 11px;
+}
+.button {
+  border-radius: 10px;
+  padding: 13px 19px;
+}
+.button.primary {
+  font-weight: 650;
+}
+.button.primary:hover:not(:disabled) {
+  background: #ff85ae;
+  border-color: #ff85ae;
+}
+.button:active:not(:disabled) {
+  transform: translateY(1px);
+}
+.header-action {
+  border-radius: 9px;
+}
+.readiness-bar {
+  padding-inline: max(28px, calc((100vw - 1360px) / 2));
+}
+.readiness-bar.blocked {
+  background: #f8e8ed;
+}
+.readiness-bar summary {
+  min-height: 40px;
+}
+.login-layout {
+  max-width: 1300px;
+  gap: 95px;
+  padding-top: 78px;
+}
+.login-context h1 {
+  font-size: clamp(36px, 3.3vw, 48px);
+  line-height: 1.08;
+  max-width: 610px;
+}
+.login-context > p {
+  font-size: 16px;
+  max-width: 465px;
+}
+.login-context .fine-print {
+  font-size: 12px;
+  margin-top: 13px;
+}
+.login-panel {
+  border-radius: 18px;
+  border-color: var(--surface-line);
+}
+.journey-link {
+  background: var(--charcoal);
+  color: var(--paper);
+  border-color: var(--charcoal);
+  margin-top: 24px;
+}
+.journey-link:hover:not(:disabled) {
+  background: #414b4e;
+  color: var(--paper);
+}
+.workspace-heading h1 {
+  font-size: 40px;
+}
+.workspace-heading p {
+  font-size: 15px;
+}
+.create-panel {
+  border-radius: 16px;
+}
+.session-list > li {
+  border-color: var(--surface-line);
+}
+.session-list a {
+  transition: background-color 140ms ease;
+}
+.session-list a:hover {
+  background: #fff8f4;
+}
+.review-heading h1 {
+  line-height: 1.18;
+}
+.tabs button {
+  min-height: 48px;
+  font-size: 14px;
+}
+.phase-strip {
+  padding-block: 18px;
+}
+.screen-stage {
+  border: 1px solid #41494b;
+}
+.stage-toolbar {
+  font-size: 12px;
+}
+.stage-caption {
+  font-size: 11px;
+}
+.stage-empty {
+  max-width: 440px;
+}
+.stage-empty h2 {
+  font-size: 28px;
+}
+.stage-empty p {
+  font-size: 14px;
+}
+.conversation-panel {
+  border-color: var(--surface-line);
+}
+.conversation-heading {
+  background: #fff9f5;
+}
+.conversation-log {
+  padding: 22px;
+}
+.utterance p {
+  font-size: 14px;
+}
+.utterance.agent {
+  background: #fceaf0;
+  border-radius: 12px 12px 12px 3px;
+}
+.speaker-presence {
+  font-size: 12px;
+}
+.capture-status {
+  background: #f3eee9;
+}
+.capture-status > div,
+.capture-status p {
+  font-size: 11px;
+}
+.control-dock {
+  border-top: 1px solid #51585a;
+  box-shadow: 0 -8px 32px #2026280a;
+}
+.device-button {
+  border-radius: 10px;
+}
+.report-heading h2 {
+  font-size: clamp(26px, 2.8vw, 38px);
+  line-height: 1.15;
+}
+.report-heading {
+  padding-bottom: 22px;
+  border-bottom: 1px solid var(--surface-line);
+}
+.report-summary {
+  font-size: 18px;
+  line-height: 1.75;
+}
+.report-prose > h3 {
+  font-size: 21px;
+}
+.report-prose {
+  max-width: 850px;
+}
+.unknowns {
+  border-top: 3px solid var(--pink);
+}
+.correction-form {
+  border-radius: 16px;
+}
+.report-version {
+  font-size: 12px;
+}
+.pill {
+  border-radius: 6px;
+}
+@media (max-width: 1024px) {
+  .login-layout {
+    gap: 40px;
+    padding-top: 48px;
+  }
+  .workspace-heading h1 {
+    font-size: 34px;
+  }
+}
+@media (max-width: 768px) {
+  .app-header {
+    padding: 15px 22px;
+    min-height: 76px;
+  }
+  .readiness-bar {
+    padding-inline: 22px;
+  }
+  .login-layout {
+    padding: 38px 24px 60px;
+    gap: 36px;
+  }
+  .login-context h1 {
+    font-size: 38px;
+  }
+  .login-note {
+    margin-top: 28px;
+  }
+  .workspace-heading h1 {
+    font-size: 32px;
+  }
+  .stage-empty h2 {
+    font-size: 26px;
+  }
+  .report-heading {
+    gap: 20px;
+  }
+}
+@media (max-width: 560px) {
+  .app-header {
+    padding: 13px 18px;
+    gap: 10px;
+  }
+  .brand {
+    gap: 14px;
+  }
+  .brand img {
+    width: 120px;
+  }
+  .header-right {
+    gap: 8px;
+  }
+  .product-name {
+    font-size: 15px;
+  }
+  .product-name > span {
+    font-size: 10px;
+  }
+  .readiness-bar {
+    padding-inline: 18px;
+  }
+  .login-layout {
+    padding: 32px 18px 44px;
+  }
+  .login-context h1 {
+    font-size: 34px;
+  }
+  .login-panel {
+    padding: 24px;
+  }
+  .tabs button {
+    font-size: 13px;
+  }
+  .stage-empty {
+    padding-inline: 0;
+  }
+  .stage-empty p {
+    font-size: 13px;
+  }
+  .report-summary {
+    font-size: 16px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+@media print {
+  .app-header,
+  .readiness-bar,
+  .control-dock,
+  .skip-link {
+    display: none !important;
+  }
+  body {
+    background: white;
+  }
+  .report-workspace {
+    margin: 0;
+    padding: 0;
+  }
+}

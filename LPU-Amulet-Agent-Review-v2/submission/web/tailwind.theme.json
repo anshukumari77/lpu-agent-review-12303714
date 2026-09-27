@@ -1,0 +1,61 @@
+{
+  "theme": {
+    "extend": {
+      "colors": {
+        "primary": "#2d3436",
+        "ink": "#202628",
+        "pink": "#ff6b9d",
+        "magenta": "#d94a8e",
+        "paper": "#fffdf9",
+        "warm": "#f6f3ef",
+        "muted": "#596064",
+        "border": "#dddcd7",
+        "blush": "#fff0f5"
+      },
+      "fontFamily": {
+        "h1": ["-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"],
+        "h2": ["-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"],
+        "body-md": ["-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"],
+        "evidence": ["ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"]
+      },
+      "fontSize": {
+        "h1": [
+          "2rem",
+          {
+            "letterSpacing": "-0.035em",
+            "fontWeight": "620"
+          }
+        ],
+        "h2": [
+          "1.5rem",
+          {
+            "letterSpacing": "-0.025em",
+            "fontWeight": "620"
+          }
+        ],
+        "body-md": [
+          "1rem",
+          {
+            "fontWeight": "400"
+          }
+        ],
+        "evidence": [
+          "0.75rem",
+          {
+            "fontWeight": "400"
+          }
+        ]
+      },
+      "borderRadius": {
+        "control": "7px",
+        "frame": "10px"
+      },
+      "spacing": {
+        "xs": "8px",
+        "sm": "16px",
+        "md": "24px",
+        "lg": "40px"
+      }
+    }
+  }
+}
